@@ -1,10 +1,12 @@
 var App = angular.module('App', []);
 
 App.controller("FeedCtrl", ['$scope','FeedService', function ($scope,Feed) {
-    $scope.loadButtonText="Load";
-    $scope.loadFeed=function(){
+    $scope.loadFeed = function(){
         Feed.parseFeed($scope.feedSrc).then(function(res){
-            $scope.feeds=res.data.responseData.feed.entries;
+            var feed = res.data.responseData.feed;
+            $scope.feedLink = feed.link;
+            $scope.feedTitle = feed.title;
+            $scope.feeds= feed.entries;
         });
     }
 }]);

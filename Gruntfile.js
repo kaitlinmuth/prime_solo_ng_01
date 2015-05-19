@@ -24,21 +24,21 @@ module.exports = function(grunt) {
                 ],
                 "dest": "public/vendor/"
             },
-            bootstrap: {
-                expand: true,
-                cwd: "node_modules",
-                src: [
-                    "bootstrap/dist/css/bootstrap.css",
-                    "bootstrap/dist/css/bootstrap.css.map",
-                    "bootstrap/dist/fonts/glyphicons-halflings-regular.eot",
-                    "bootstrap/dist/fonts/glyphicons-halflings-regular.svg",
-                    "bootstrap/dist/fonts/glyphicons-halflings-regular.ttf",
-                    "bootstrap/dist/fonts/glyphicons-halflings-regular.woff",
-                    "bootstrap/dist/fonts/glyphicons-halflings-regular.woff2",
-                    "bootstrap/dist/js/bootstrap.min.js"
-                ],
-                "dest": "public/vendor/"
-            },
+            //bootstrap: {
+            //    expand: true,
+            //    cwd: "node_modules",
+            //    src: [
+            //        //"bootstrap/dist/css/bootstrap.css",
+            //        "bootstrap/dist/css/bootstrap.css.map",
+            //        "bootstrap/dist/fonts/glyphicons-halflings-regular.eot",
+            //        "bootstrap/dist/fonts/glyphicons-halflings-regular.svg",
+            //        "bootstrap/dist/fonts/glyphicons-halflings-regular.ttf",
+            //        "bootstrap/dist/fonts/glyphicons-halflings-regular.woff",
+            //        "bootstrap/dist/fonts/glyphicons-halflings-regular.woff2",
+            //        "bootstrap/dist/js/bootstrap.min.js"
+            //    ],
+            //    "dest": "public/vendor/"
+            //},
             styles: {
                 expand: true,
                 cwd: "client",
